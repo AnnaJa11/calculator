@@ -14,16 +14,16 @@ num_2 = int(input('Enter your second number: '))
 
 if math_operation == '+':
     logging.info('{} + {} = '.format(num_1, num_2))
-    logging.info(num_1 + num_2)
+    print(num_1 + num_2)
 
 elif math_operation == '-':
     logging.info('{} - {} = '.format(num_1, num_2))
-    logging.info(num_1 - num_2)
+    print(num_1 - num_2)
 
 elif math_operation == '*':
     logging.info('{} * {} = '.format(num_1, num_2))
-    logging.info(num_1 * num_2)
+    print(num_1 * num_2)
 
 elif math_operation == '/':
     logging.info('{} / {} = '.format(num_1, num_2))
-    logging.info(num_1 / num_2)
+    print(num_1 / num_2)
