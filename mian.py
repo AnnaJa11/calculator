@@ -18,8 +18,23 @@ select = {
 }
 
 
-num1 = float(input("What's the first number?: "))
-for operation in select:
-    print(operation)
-num2 = float(input("What's the next number?: "))
+def calculator():
+    num1 = float(input("What's the first number?: "))
+    for operation in select:
+        print(operation)
+    should_continue = True
+
+    while should_continue:
+        user_operation = input("Pick an operation: ")
+        num2 = float(input("What's the next number?: "))
+        user_calculation = select[user_operation]
+        answer = user_calculation(num1, num2)
+        print(f"{num1} {user_operation} {num2} = {answer}")
+
+        if input('Continue? y/n') == 'n':
+            should_continue = False
+            print("Goodbye! ")
+
+          
+calculator()
   
