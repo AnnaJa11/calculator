@@ -31,9 +31,13 @@ def calculator():
         answer = user_calculation(num1, num2)
         print(f"{num1} {user_operation} {num2} = {answer}")
 
-        if input('Continue? y/n') == 'n':
+        if input(f"Type 'y' to continue calculating with {answer}, or type 'n' to start a new calculation: ") == 'y':
+            num1 = answer
+        else:
             should_continue = False
             print("Goodbye! ")
+
+            calculator()
 
           
 calculator()
