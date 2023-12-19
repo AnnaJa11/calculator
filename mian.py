@@ -16,3 +16,10 @@ select = {
   "3": multiply,
   "4": divide,
 }
+
+
+num1 = float(input("What's the first number?: "))
+for operation in select:
+    print(operation)
+num2 = float(input("What's the next number?: "))
+  
